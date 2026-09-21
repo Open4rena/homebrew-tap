@@ -1,7 +1,6 @@
 class O4 < Formula
   desc "Multi-provider agentic coding assistant for the terminal"
   homepage "https://github.com/Open4rena/o4-releases"
-  version "0.2.34"
   license "MIT"
 
   on_macos do
