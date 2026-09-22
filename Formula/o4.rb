@@ -5,25 +5,25 @@ class O4 < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.34/o4-macos-arm64.tar.gz"
-      sha256 "890d3a51f73d29819cc4fa8c71f2da88f8b16f74bdcb6db31c5fc6763295bbe8"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.46/o4-macos-arm64.tar.gz"
+      sha256 "348f9344cfff640e658afeaad23aaeac63ac575d4a58f26fe56f73bb2256b248"
     end
 
     on_intel do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.34/o4-macos-x86_64.tar.gz"
-      sha256 "c658a2d9e4edd4aa7c13ac8e538ad92cbb07510a552417339be4b9b1e2640291"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.46/o4-macos-x86_64.tar.gz"
+      sha256 "697452d7aa3cabc1453f2fcb495e37345f677f95615bf2ff12237f527bcdff3e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.34/o4-linux-arm64.tar.gz"
-      sha256 "e90533a4d42612c08a8d681d9c42fc73cf9b4b6560cd9429762d28832589c9f7"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.46/o4-linux-arm64.tar.gz"
+      sha256 "098f7871b89840aab5e914b722af7c6dd7e89b69c81c9c0c00f2e85fe17a801f"
     end
 
     on_intel do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.34/o4-linux-x86_64.tar.gz"
-      sha256 "4a2d49bc049c3b0a85b5bf3ec4d25df2dad0ea0e8c7db5a025200e112f6ab092"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.46/o4-linux-x86_64.tar.gz"
+      sha256 "63c39a97a0831d722385944dc177c3f646ce0718cd3ffab445bc4442d46d0188"
     end
   end
 
