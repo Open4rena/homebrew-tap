@@ -1,29 +1,28 @@
 class O4 < Formula
   desc "Multi-provider agentic coding assistant for the terminal"
   homepage "https://github.com/Open4rena/o4-releases"
-  license "MIT"
+  # macOS releases ship for Apple Silicon only. Homebrew needs a URL on
+  # every platform it loads the formula on, so the Apple Silicon build is
+  # the unconditional default and each Linux platform overrides it; the
+  # arch requirement is what stops an install on an Intel Mac.
+  url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.57/o4-macos-arm64.tar.gz"
+  sha256 "500db1dee0aa8c9a194d960c6dccec01f4a03a1bc6e2b09ceb39bbbfe8e5cc20"
+  # Proprietary: distributed under the EULA in the releases repository.
+  license :cannot_represent
 
   on_macos do
-    on_arm do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.54/o4-macos-arm64.tar.gz"
-      sha256 "1d5ceb4188766aacf6e1da59a9dc96c41f7ad5e2d14e03daf772822e6059ba8d"
-    end
-
-    on_intel do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.54/o4-macos-x86_64.tar.gz"
-      sha256 "cb67e826db7c9ccb9ebc23acfb2f49350292d117724db618006424cd0aee9f8e"
-    end
+    depends_on arch: :arm64
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.54/o4-linux-arm64.tar.gz"
-      sha256 "dee962d955f9692a75232c232a083d6c32597f43b0cb65c3adf9376aaef10a8c"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.57/o4-linux-arm64.tar.gz"
+      sha256 "131b649e2209219c47c52c3f1869ce1833cd9ebe6836c97408cf8e0536614654"
     end
 
     on_intel do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.54/o4-linux-x86_64.tar.gz"
-      sha256 "2429daa6dbbfd1302e5dd75af17c2ae2780824e614444b5e20a92f45a8b01852"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.2.57/o4-linux-x86_64.tar.gz"
+      sha256 "795cafacb2a327402bafd63e465a7acd62cd5c94fc0aee4fe8ede78fbb932d14"
     end
   end
 
