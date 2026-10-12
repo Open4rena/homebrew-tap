@@ -5,8 +5,8 @@ class O4 < Formula
   # every platform it loads the formula on, so the Apple Silicon build is
   # the unconditional default and each Linux platform overrides it; the
   # arch requirement is what stops an install on an Intel Mac.
-  url "https://github.com/Open4rena/o4-releases/releases/download/v0.3.8/o4-macos-arm64.tar.gz"
-  sha256 "8084aedd0a5b929525bb7a8053f0b657d29777a16ebc4c32ced9740ca4a411c4"
+  url "https://github.com/Open4rena/o4-releases/releases/download/v0.3.9/o4-macos-arm64.tar.gz"
+  sha256 "9cb73e21f55792f1dc4f9fc36a8f780b8bcc2301c2b53fa102f8e24e1c5db05d"
   # Proprietary: distributed under the EULA in the releases repository.
   license :cannot_represent
 
@@ -16,13 +16,13 @@ class O4 < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.3.8/o4-linux-arm64.tar.gz"
-      sha256 "10c402f6bb81c40aaa5cf9495a3baf27b9bd9300d2b0b18df691a3d0c655005e"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.3.9/o4-linux-arm64.tar.gz"
+      sha256 "57ecdb1b3f2861a95329b0b54fd3becb450315d755edec29d713c22aa6af951b"
     end
 
     on_intel do
-      url "https://github.com/Open4rena/o4-releases/releases/download/v0.3.8/o4-linux-x86_64.tar.gz"
-      sha256 "224d2535b7245e14850e3e4e2096f8fdb79a1d9253a10e8a5ffc91ecf4aa4335"
+      url "https://github.com/Open4rena/o4-releases/releases/download/v0.3.9/o4-linux-x86_64.tar.gz"
+      sha256 "ea2079f87ce580301f7116a6d470a3dccc7a0bd8a16e3b0c3223cc11c2c77a9a"
     end
   end
 
